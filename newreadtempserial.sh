@@ -73,7 +73,7 @@ for (my $o = 0; $o <= 5; $o++ ){
 		$allsensorsok = 0;
 		}
 	}
-
+# code for not running my vent fan if it's hotter outside than inside.
 if ($allsensorsok == 1){
 for (my $o = 0; $o <= 4; $o++ ){
 	if ($outarray[5] > ( $outarray[$o] - 1 )) {
